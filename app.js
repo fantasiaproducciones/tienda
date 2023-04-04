@@ -190,7 +190,7 @@ function actualizarTotalCarrito(){
         var cantidad = cantidadItem.value;
         total = total + (precio * cantidad);
     }
-    total = Math.round(total * 100)/100;
+    total = Math.round(total * 1)/1;
 
     document.getElementsByClassName('carrito-precio-total')[0].innerText = 'S/.'+total.toLocaleString("es");
 
