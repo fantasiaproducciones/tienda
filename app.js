@@ -94,15 +94,15 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
 
     var itemCarritoContenido = `
         <div class="carrito-item">
-            <img src="S/{imagenSrc}" width="80px" alt="">
+            <img src="${imagenSrc}" width="80px" alt="">
             <div class="carrito-item-detalles">
-                <span class="carrito-item-titulo">S/{titulo}</span>
+                <span class="carrito-item-titulo">${titulo}</span>
                 <div class="selector-cantidad">
                     <i class="fa-solid fa-minus restar-cantidad"></i>
                     <input type="text" value="1" class="carrito-item-cantidad" disabled>
                     <i class="fa-solid fa-plus sumar-cantidad"></i>
                 </div>
-                <span class="carrito-item-precio">S/{precio}</span>
+                <span class="carrito-item-precio">${precio}</span>
             </div>
             <button class="btn-eliminar">
                 <i class="fa-solid fa-trash"></i>
