@@ -1,6 +1,7 @@
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
 
+
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
@@ -43,9 +44,12 @@ function ready(){
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
 
+
 function pagarClicked(){
-    
-   https://api.whatsapp.com/send?phone=51980526336&text=%20hola;
+    var sendx;
+
+   sendx = `https://api.whatsapp.com/send?phone=51980526336&text=%20hola`;
+  
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){
