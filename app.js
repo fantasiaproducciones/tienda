@@ -42,10 +42,10 @@ function ready(){
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
 //Eliminamos todos los elementos del carrito y lo ocultamos
-var enviawhatsapp
+
 function pagarClicked(){
     
-    
+    var enviawhatsapp
     enviawhatsapp = `https://api.whatsapp.com/send?phone=51980526336&text=%20hola`;
     //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
