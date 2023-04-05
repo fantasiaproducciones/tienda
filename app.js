@@ -44,7 +44,7 @@ function ready(){
 //Eliminamos todos los elementos del carrito y lo ocultamos
 var enviawhatsapp
 function pagarClicked(){
-    //alert("Gracias por la compra");
+    
     
     enviawhatsapp = 'https://api.whatsapp.com/send?phone=51980526336&text=%20hola'
     //Elimino todos los elmentos del carrito
