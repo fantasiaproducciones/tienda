@@ -45,15 +45,27 @@ function ready(){
 //Eliminamos todos los elementos del carrito y lo ocultamos
 
 
-function pagarClicked(){
+function pagarClicked(event){
  
 
-   let url = "https://api.whatsapp.com/send?phone=51980526336&text=%20hola";
-  
-    //Elimino todos los elmentos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
+    var carritoContenedor = document.getElementsByClassName('carrito')[0];
+    var canasta = carritoContenedor.getElementsByClassName('carrito-item');
+    mensajeX= 'LISTA DE PEDIDOS'
+    for(var i=0;i < canasta.length;i++){
+    var titulo = document.getElementsByClassName('titulo-item')[i].innerText;    
+    var precio = document.getElementsByClassName('precio-item')[i].innerText;
+    var cantidad = document.getElementsByClassName('carrito-item-cantidad')[i].value;
+
+    
+    var mensajeX =  mensajeX + '%0A     '+ cantidad + '     ' + titulo + '     ' + precio
+   }
+
+    
+    window.open('https://api.whatsapp.com/send?phone=51980526336&text=' + mensajeX, '_blank');
     while (carritoItems.hasChildNodes()){
         carritoItems.removeChild(carritoItems.firstChild)
+
     }
     actualizarTotalCarrito();
     ocultarCarrito();
