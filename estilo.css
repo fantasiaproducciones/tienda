@@ -34,7 +34,7 @@ header h1{
     grid-gap:30px;
     grid-row-gap: 30px;
     /* width: 60%; */
-    width: 100%;
+    width: 50%;
     transition: .3s;
 }
 /************ SCONTENEDOR PRODUCTOR *********/
