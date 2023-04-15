@@ -40,7 +40,7 @@ header h1{
 .contenedor .contenedor-items .item{
     max-width: 200px;
     margin: auto;
-    border: 1px solid #666;
+    border: 7px solid #666;
     border-radius: 10px;
     padding: 20px;
     transition: .3s;
